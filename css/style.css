@@ -1,0 +1,161 @@
+/* *{ margin: 0; padding: 0; box-sizing: border-box;} */
+
+
+html,body{
+    margin: 0;
+    box-sizing: border-box;
+    overflow: visible;
+    
+}
+
+/* global section start */
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+/* font-family: 'Abel', sans-serif; */
+
+
+:root{
+--text-gray: #3f4954;
+--text-light: #686666da;
+--bg-color: #0f0f0f;
+--white: #ffffff;
+--midnight: #104f55;
+
+/* gradient color */
+--sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive mediam query at 760 */
+@media only screen and (max-width:760px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+    .footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    main .blog-image{  
+        height: 400px;
+        width: 100%;
+    }
+}
+
+
+/* ............response at 1130px............ */
+
+@media only screen and (max-width:1130px){
+    .site-content .post-content .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+
+    .site-content .sidebar .popular-post .post-info{
+        display: none;
+    }
+
+    .footer.footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* ............response at 520px............ */
+
+@media only screen and (max-width:520px){
+    main.blog{
+        height: 125vh;
+    }
+
+    .site-content .post-content > .post-image .post-info{
+        display: none;
+    }
+    .footer.footer > div{
+        padding: 0.3rem .3rem !important;
+    }
+    footer.footer.footer .rights {
+        padding: 0 5.4rem;
+        text-align: center !important;
+    }
+   
+    
+    .footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);}
+        main .blog-image{  
+            height: 300px;
+            width: 100%;
+        }
+}
